@@ -1,1 +1,6 @@
 12/10 - need mysql connector to conenct to db, can be done using pip but pip is not installing correctly
+14/10 reinstall pip and ensure the pythin is included in Setting>Environmens Values -> https://appuals.com/fix-pip-is-not-recognized-as-an-internal-or-external-command/
+15/10 GOT IT
+05/11 we are pulling from the database, now to attempt to manipulate the database - tried importing game sales data (C:/Downloads/archive/vgsales.csv) but data needs cleansing, 
+will continue next time
+06/11 imported game sales data for genre, start work on calling a join through python
