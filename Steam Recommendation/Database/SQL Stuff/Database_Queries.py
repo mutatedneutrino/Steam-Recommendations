@@ -22,3 +22,16 @@ def connect(query):
     
     
     return results
+
+
+def select(filter='*',table='dbo.SteamRecommendations'):
+
+    query='SELECT '+filter+' FROM '+table
+
+    print(query)
+
+    results = connect(query)
+
+    for x in results:
+        print(x) 
+    

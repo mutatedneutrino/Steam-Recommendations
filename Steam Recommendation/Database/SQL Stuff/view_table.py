@@ -1,6 +1,6 @@
-import Connection
+import Database_Queries
 
-results = Connection.connect('SELECT TOP 10 * FROM dbo.SteamRecommendations')
+filter = 'TOP 10 *'
+table = 'dbo.SteamRecommendations'
 
-for x in results:
-    print(x)
+Database_Queries.select(filter,table)
