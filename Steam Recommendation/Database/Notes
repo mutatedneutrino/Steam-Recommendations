@@ -4,3 +4,5 @@
 05/11 we are pulling from the database, now to attempt to manipulate the database - tried importing game sales data (C:/Downloads/archive/vgsales.csv) but data needs cleansing, 
 will continue next time
 06/11 imported game sales data for genre, start work on calling a join through python
+09/11 merged select and join and connection into one script, made join work, created query testing script
+10/11 did nothing
