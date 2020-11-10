@@ -24,9 +24,9 @@ def connect(query):
     return results
 
 
-def select(filter='*',table='dbo.SteamRecommendations'):
+def select(select='*',table='dbo.SteamRecommendations',extra_condition=''):
 
-    query='SELECT '+filter+' FROM '+table
+    query='SELECT '+select+' FROM '+table
 
     print(query)
 
@@ -34,4 +34,15 @@ def select(filter='*',table='dbo.SteamRecommendations'):
 
     for x in results:
         print(x) 
+
     
+def join(select,table1,table2,join_type,join_property):
+
+    query='SELECT '+select+' FROM '+ table1 + ' ' + ' ' + join_type + ' ' + table2 + ' ON ' + join_property
+
+    print(query)
+
+    results = connect(query)
+
+    for x in results:
+        print(x) 
